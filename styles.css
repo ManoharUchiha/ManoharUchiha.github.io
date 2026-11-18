@@ -81,6 +81,16 @@ h2 { font-size: clamp(42px, 4vw, 58px); line-height: 1.08; margin-bottom: 0; }
 .project-link { color: var(--accent); text-decoration: none; justify-self: end; align-self: center; white-space: nowrap; font-size: 10px; }
 .project-link:hover { text-decoration: underline; }
 
+.experience-section { padding-top: 110px; padding-bottom: 110px; }
+.experience-list { border-top: 1px solid var(--line); }
+.experience-item { display: grid; grid-template-columns: 220px 1fr; gap: 38px; border-bottom: 1px solid var(--line); padding: 34px 0; }
+.experience-date, .experience-company { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 11px; font-weight: 600; letter-spacing: .1em; }
+.experience-date { color: var(--muted); margin: 8px 0 0; }
+.experience-company { color: var(--accent); margin-bottom: 9px; text-transform: uppercase; }
+.experience-item h3 { font-size: clamp(20px, 2vw, 27px); font-weight: 600; letter-spacing: -.03em; margin-bottom: 12px; }
+.experience-item h3 span { color: var(--muted); }
+.experience-item div > p:last-child { max-width: 720px; color: var(--muted); font-size: 15px; line-height: 1.75; margin-bottom: 0; }
+
 .about-section { padding-top: 125px; padding-bottom: 145px; display: grid; grid-template-columns: 1fr 1fr; gap: 70px; }
 .about-section h2 { max-width: 550px; }
 .about-copy { padding-top: 40px; max-width: 505px; }
@@ -112,6 +122,9 @@ h2 { font-size: clamp(42px, 4vw, 58px); line-height: 1.08; margin-bottom: 0; }
   .project-index { margin-bottom: 16px; padding: 0; }
   .project-arrow { display: inline; }
   .project-link { display: inline-block; margin-top: 23px; }
+  .experience-section { padding-top: 75px; padding-bottom: 75px; }
+  .experience-item { display: block; padding: 28px 0; }
+  .experience-date { margin: 0 0 16px; }
   .about-section { padding-top: 80px; padding-bottom: 100px; }
   .about-copy { padding-top: 30px; }
   .footer-inner { font-size: 9px; }
